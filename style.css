@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #74ebd5, #ACB6E5);
+  min-height: 100vh;
+  color: #2c3e50;
+}
+
+section {
+  display: none;
+  transition: opacity 0.5s ease;
+}
+
+section.active {
+  display: block;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* Card */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(44, 62, 80, 0.9);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h1 {
+  font-size: 20px;
+}
+
+.navbar button {
+  background: #3498db;
+  color: white;
+  border: none;
+  margin: 0 5px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background: #2980b9;
+}
+
+/* Hero */
+.hero {
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  background-image: url('https://images.unsplash.com/photo-1513475382585-d06e58bcb0ea?auto=format&fit=crop&w=1400&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+}
+
+.hero button {
+  background: #f1c40f;
+  border: none;
+  color: #2c3e50;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background: #d4ac0d;
+}
+
+/* Form dan Tabel */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input, button, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #3498db;
+  color: white;
+}
+
+td, th {
+  padding: 10px;
+}
+
+#searchBook {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.notif {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+  display: none;
+}
+
+/* Login */
+.login-container {
+  margin-top: 120px;
+}
+
+.hint {
+  font-size: 14px;
+  color: #555;
+  margin-top: 15px;
+}
